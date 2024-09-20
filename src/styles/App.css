@@ -1,0 +1,150 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  color: #fff;
+  text-align: center;
+  background-image: url('../images/bg2\ \(2\).jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+
+}
+.label{
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(76, 70, 70);
+}
+.weather-app {
+ 
+  padding:  50px 150px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;  border-radius: 50px;
+}
+
+.weather-app h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.city-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.temperature {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.weather-condition {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-condition img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  background-color: rgba(95, 96, 157, 0.811);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 150px;
+  margin: 10px;
+}
+
+.forecast-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.forecast-card p {
+  margin: 5px 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: rgba(95, 96, 157, 0.811);
+  color: #ecf2f3;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+button:hover {
+  background-color: #8a6dd7;
+  color: #fff;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  width: 300px;
+  max-width: 100%;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.error {
+  margin-top: 20px;
+  color: red;
+  font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .temperature {
+    font-size: 2rem;
+  }
+
+  .forecast-card {
+    min-width: 120px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
